@@ -16,19 +16,32 @@ import java.util.ArrayList;
 
 public class ArrayLists {
     public static void main(String[] args) {
+        // this line creates a arraylist callde food that takes in a string
         ArrayList<String> food = new ArrayList<String>();
+        // the next 3 lines adds to the arraylist
         food.add("pizza");
         food.add("hamburger");
         food.add("hotdog");
+        // this line is a loop with a counter i that stays under the arraylist foods size
+        // which is done by doing food.size() and i increments by 1
         for(int i = 0; i < food.size(); i++){
+            // this line prints out food size at index i by doing .get() which is how you do index with arraylist
             System.out.println(food.get(i));
+
         }
+        // this line sets the index of 0 inside of food to sushi
         food.set(0, "sushi");
+        // this line prints out the arraylist food so we can see the changes we made
         System.out.println(food);
+        // this line removes the seccond index from food
         food.remove(2);
+        // this line again prints it out so we can see the changes
         System.out.println(food);
+        // this line clears the entire array list
         food.clear();
+        // this line prints out the list so we can see the changes
         System.out.println(food);
+
     }
 
 }
