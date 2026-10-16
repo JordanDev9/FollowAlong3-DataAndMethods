@@ -14,5 +14,12 @@ package part10;
 //    saying in YOUR OWN WORDS what that line does. The README shows an example.
 
 public class ArrayBasics {
+    public static void main(String[] args) {
+        String[] cars = {"Camaro", "Corvette", "Tesla"};
+        String[] car = new String[3];
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
+        }
+    }
 
 }
