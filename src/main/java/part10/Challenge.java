@@ -11,6 +11,14 @@ package part10;
 // Replace the line marked YOUR CODE so the method returns the right answer.
 
 public class Challenge {
+    public static void main(String[] args) {
+        System.out.println(endsWith(new int[] {7, 2, 3}, 7));
+        System.out.println(endsWith(new int[] {1, 2, 9}, 9));
+        System.out.println(endsWith(new int[] {1, 5, 3}, 5));
+        System.out.println(total(new int[] {1, 2, 3}));
+        System.out.println(total(new int[] {10}));
+        System.out.println(total(new int[] {}));
+    }
 
     // Return true if the FIRST or the LAST number in the array equals target.
     // The array always has at least one number.
@@ -18,14 +26,24 @@ public class Challenge {
     // endsWith(new int[] {1, 2, 9}, 9)  should return true   (last is 9)
     // endsWith(new int[] {1, 5, 3}, 5)  should return false  (5 is only in the middle)
     public static boolean endsWith(int[] nums, int target) {
-        return false;   // YOUR CODE
+        int last = nums.length - 1;
+        if(nums[0] == target || nums[last] == target){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     // Return the total: all the numbers in the array added up.
     // total(new int[] {1, 2, 3})  should return 6
     // total(new int[] {10})       should return 10
     // total(new int[] {})         should return 0   (an empty array adds up to 0)
-    public static int total(int[] nums) {
-        return 0;   // YOUR CODE
+    public static int total(int[] num) {
+        int res = 0;
+        for( int i = 0; i < num.length; i++){
+            res += num[i];
+            
+        }
+        return res;
     }
 }
