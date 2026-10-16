@@ -12,5 +12,11 @@ package part11;
 // You will need to type the main method yourself. That is part of the practice.
 
 public class Warmup {
+    public static void main(String[] args) {
+        String[] foods = {"pizza", "taco", "wings"};
+        for (int i = 0; i < foods.length; i++) {
+            System.out.println("I like " + foods[i]);
+        }
 
+    }
 }
