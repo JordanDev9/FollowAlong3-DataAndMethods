@@ -15,9 +15,17 @@ package part10;
 
 public class ArrayBasics {
     public static void main(String[] args) {
+        // what this line does is create a string array that holds mutliple values of types string
         String[] cars = {"Camaro", "Corvette", "Tesla"};
+        // this line says that you are creating a string array called car and its going to have 3 string items in it
         String[] car = new String[3];
+        /* this is a loop that will print out every item in the array one at a time
+        it does this beccause we have a counter i that increase by 1 every step
+        and cannot go above the length of car which is the amount of items
+        and in this case 3
+         */
         for (int i = 0; i < cars.length; i++) {
+            // this line prints out cars at i index so when i is 1 it prints cars[1] which is Corvette
             System.out.println(cars[i]);
         }
     }
