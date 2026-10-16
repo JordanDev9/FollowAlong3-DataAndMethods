@@ -16,18 +16,26 @@ package part11;
 
 public class WrapperClasses {
     public static void main(String[] args) {
+        /*
+        These lines create objects but java can use them as types so we gave
+        them values that match their types
+         */
         Boolean a = true;
         Character b = '@';
         Integer c = 123;
         Double d = 3.14;
         String e = "Bro";
+        // this line proves that the objects can but used as their type
         if (a == true) {
+            // this line was used to show the  condtition is true
             System.out.println("This is true");
         }
-
+        // this line proves that the objects can but used as their type
         if (b == '@') {
+            // this line was used to show the  condtition is true
             System.out.println("This is true");
         }
+        //both of these lines were more ways to show that the objects could be used
         System.out.println(c + 1);
         System.out.println(d * 2);
     }
