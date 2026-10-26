@@ -16,24 +16,37 @@ package part13;
 
 public class Methods {
         public static void main(String[] args) {
+            // this line assigns string bro to the variable name
             String name = "Bro";
+            // this line sets the variable age to the int value of 21
             int age = 21;
+            // this line calls the function hello and takes in the parameters name and age and it does it 3 times
             hello(name, age);
             hello(name, age);
             hello(name, age);
             hello(name, age);
+            // this line sets the varibale x to the int value of 3
             int x = 3;
+            // this line sets the variable y to the int value of 4
             int y = 4;
+            // this line sets the variable z to call the function add(x, y)
             int z = add(x, y);
+            // this line prints z which is pre defined above
             System.out.println(z);
         }
 
-        static void hello(String name,int  age) {
+        // this line creates a method called hello that has 2 parameters name and age
+        static void hello(String name,int  age){
+            // this line prints hello plus the parameter name which would be predefined
         System.out.println("Hello " + name);
+        // this line prints you are and the parameter age which would be predefined
         System.out.println("You are " + age);
     }
+    // this line creates a method called add that takes in the parameters x and y
     static int add(int x, int y) {
+            // this line says the z is equal to the sum of x and y adding them together
         int z = x + y;
+        // this line returns z so that whenever this function is called the output is whatever 7 is
         return z;
     }
 
