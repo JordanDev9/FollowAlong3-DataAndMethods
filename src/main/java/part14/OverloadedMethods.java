@@ -17,40 +17,88 @@ package part14;
 
 public class OverloadedMethods {
     public static void main(String[] args) {
+        // Call the add method with 2 ints and store the result in x
         int x = add(1, 2);
+
+// Print x
         System.out.println(x);
+
+// Call the add method with 3 ints and store the result in y
         int y = add(1, 2, 3);
+
+// Print y
         System.out.println(y);
+
+// Call the add method with 4 ints and store the result in z
         int z = add(1, 2, 3, 4);
+
+// Print z
         System.out.println(z);
+
+// Call the add method with 4 doubles and store the result in d
         double d = add(1.0, 2.0, 3.0, 4.0);
+
+// Print d
         System.out.println(d);
     }
+
+    // Method that adds 2 ints
     static int add(int a, int b) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #1");
+
+// Return the sum
         return a + b;
     }
+
+    // Method that adds 3 ints
     static int add(int a, int b, int c) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #2");
+
+// Return the sum
         return a + b + c;
     }
+
+    // Method that adds 4 ints
     static int add(int a, int b, int c, int d) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #3");
+
+// Return the sum
         return a + b + c + d;
     }
+
+    // Method that adds 2 doubles
     static double add(double a, double b) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #4");
+
+// Return the sum
         return a + b;
     }
 
+    // Method that adds 3 doubles
     static double add(double a, double b, double c) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #5");
+
+// Return the sum
         return a + b + c;
     }
 
+    // Method that adds 4 doubles
     static double add(double a, double b, double c, double d) {
+
+// Show which overloaded method is being used
         System.out.println("This is overloaded method #6");
+
+// Return the sum
         return a + b + c + d;
     }
-
 }
